@@ -3,14 +3,14 @@
 t_list  *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
         t_list  *new_lst;
-        //t_list        *new_node;
 
-        if (!lst || !f || !del)
+        if (!lst)
                 return (NULL);
         new_lst = ft_lstnew(f(lst->content));
         if (!new_lst)
                 return (NULL);
-        while (lst) 
+        lst = lst->next;
+        while (lst)
         {
                 ft_lstadd_back(&new_lst, ft_lstnew(f(lst->content)));
                 if (!new_lst)
