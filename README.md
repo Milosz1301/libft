@@ -1,1 +1,0 @@
-42 Warsaw project
