@@ -6,11 +6,11 @@ A custom C **library** developed as part of the 42 school curriculum. This proje
 
 ## Technical specification
 
-**Requirement** | Specification 
-**Language**| C (C99/C11) 
-**Standard** | POSIX / 42 Norminette 
-**Build System** | GNU Make 
-**Memory** | Zero-leak policy (Valgrind/Leaks verified) 
+**Requirement** | Specification  
+**Language**| C (C99/C11)  
+**Standard** | POSIX / 42 Norminette  
+**Build System** | GNU Make  
+**Memory** | Zero-leak policy (Valgrind/Leaks verified)  
 **Compilation flags** | -Wall -Werror -Wextra
 
 ## Modules
