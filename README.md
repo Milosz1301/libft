@@ -1,58 +1,42 @@
 
 # libft
+A custom C **library** developed as part of the 42 school curriculum. This project re‑implements selected **standard C library functions**, includes additional utilities for string and memory handling, and supports **linked list operations**.
+> The goal of the Libft project was to deepen my understanding of pointers, memory management, static libraries, and C coding standards, while building a library I can reuse across future projects.
 
-**Core C Library | 42 Network Standard | High-Performance Implementation**
+## Technical specification
+**Requirement** | Specification 
+**Language**| C (C99/C11) 
+**Standard** | POSIX / 42 Norminette 
+**Build System** | GNU Make 
+**Memory** | Zero-leak policy (Valgrind/Leaks verified) 
+**Compilation flags** | -Wall -Werror -Wextra 
 
-A robust, statically-linked library of C functions reimplementing standard library components and extending them with advanced data structures. Developed with a focus on memory efficiency, strict standards compliance, and technical precision.
-
----
-
-## 🛠 Technical Specifications
-
-| Requirement | Specification |
-| :--- | :--- |
-| **Language** | C (C99/C11) |
-| **Standard** | POSIX / 42 Norminette |
-| **Build System** | GNU Make |
-| **Memory** | Zero-leak policy (Valgrind/Leaks verified) |
-| **Strictness** | -Wall -Werror -Wextra |
-
----
-
-## 📦 Modules
-
-### 1. Standard Libc Implementation
-High-efficiency versions of core functions from `<ctype.h>`, `<string.h>`, and `<stdlib.h>`.
-- **Memory Operations:** `memset`, `bzero`, `memcpy`, `memmove`, `memchr`, `memcmp`.
-- **String Manipulation:** `strlen`, `strlcpy`, `strlcat`, `strchr`, `strrchr`, `strnstr`, `strncmp`.
-- **Type Logic:** `isalpha`, `isdigit`, `isalnum`, `isascii`, `isprint`, `toupper`, `tolower`.
+## Modules
+*(all implemented functions prefixed with `ft_`)*
+### 1. Standard Libc re-implementation
+Core memory and string manipulation utilities:
+- **Memory Operations:** `ft_memset`, `ft_bzero`, `ft_memcpy`, `ft_memmove`, `ft_memchr`, `ft_memcmp`.
+- **String Manipulation:** `ft_strlen`, `ft_strlcpy`, `ft_strlcat`, `ft_strchr`, `ft_strrchr`, `ft_strnstr`, `ft_strncmp`.
+- **Type Logic:** `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`, `ft_toupper`, `ft_tolower`.
 
 ### 2. Extended Utility Functions
-Advanced logic for string transformation and I/O management.
+String transformation and I/O management:
 - **Allocation:** `ft_substr`, `ft_strjoin`, `ft_strtrim`, `ft_split`, `ft_itoa`.
 - **Functional Programming:** `ft_strmapi`, `ft_striteri`.
 - **File Descriptor I/O:** `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`.
 
 ### 3. Data Structures (Linked Lists)
-A comprehensive API for dynamic list management.
+Linked list manipulation routines.
 - **Operations:** `ft_lstnew`, `ft_lstadd_front`, `ft_lstsize`, `ft_lstlast`, `ft_lstadd_back`.
 - **Memory Management:** `ft_lstdelone`, `ft_lstclear`, `ft_lstiter`, `ft_lstmap`.
 
----
-
-## 🚀 Build Instructions
-
+## Build Instruction
 The project produces a static library file `libft.a`.
 
-```bash
+```
 # Clone the repository
-git clone [https://github.com/miluns/libft.git](https://github.com/miluns/libft.git) && cd libft
-
-# Compile mandatory functions
+git clone git@github.com:miluns/libft.git
+cd libft
+ 
+# Compile into a static library
 make
-
-# Compile with linked list support
-make bonus
-
-# Clean object files
-make clean
