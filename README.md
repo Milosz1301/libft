@@ -5,11 +5,11 @@ A custom C **library** developed as part of the 42 school curriculum. This proje
 > The goal of the Libft project was to deepen my understanding of pointers, memory management, static libraries, and C coding standards, while building a library I can reuse across future projects.
 
 ## Technical specification  
-**Language**| C (C99/C11)  
-**Standard** | POSIX / 42 Norminette  
-**Build System** | GNU Make  
-**Memory** | Zero-leak policy (Valgrind/Leaks verified)  
-**Compilation flags** | -Wall -Werror -Wextra
+**Language**: C (C99/C11)  
+**Standard**: POSIX / 42 Norminette  
+**Build System**: GNU Make  
+**Memory**: Zero-leak policy (Valgrind/Leaks verified)  
+**Compilation flags**: -Wall -Werror -Wextra
 
 ## Modules
 
