@@ -32,9 +32,10 @@ Using a `t_list` struct, simplification of linked list usage:
 ## Build Instruction
 The project produces a static library file `libft.a`.
 ```
-$\color{gray}{\text{# Clone the repository}}$
+![Status](https://img.shields.io/badge/STATUS-DZIAŁA-green)
+![Mój kolorowy tekst](path/to/your/image.svg)
 git clone git@github.com:miluns/libft.git
-$\color{blue}{\text{cd}}$ libft
+$\color{blue}{\text{cd}} libft
  
 $\color{gray}{\text{# Compile into a static library}}$
 make
