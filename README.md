@@ -32,6 +32,7 @@ Using a `t_list` struct, simplification of linked list usage:
 ## Build Instruction
 The project produces a static library file `libft.a`.
 ```bash
+# Clone the repository
 git clone git@github.com:miluns/libft.git
 cd libft
 
