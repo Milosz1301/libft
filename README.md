@@ -31,11 +31,9 @@ Using a `t_list` struct, simplification of linked list usage:
 
 ## Build Instruction
 The project produces a static library file `libft.a`.
-```
-![Status](https://img.shields.io/badge/STATUS-DZIAŁA-green)
-![Mój kolorowy tekst](path/to/your/image.svg)
+```bash
 git clone git@github.com:miluns/libft.git
-$\color{blue}{\text{cd}} libft
- 
-$\color{gray}{\text{# Compile into a static library}}$
+cd libft
+
+# Compile into a static library
 make
