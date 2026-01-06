@@ -25,7 +25,7 @@ String transformation and I/O management:
 - **File Descriptor I/O:** `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`.
 
 ### Linked list manipulation routines
-Using a t_list struct, simplification of linked list usage:
+Using a `t_list struct`, simplification of linked list usage:
 - **Operations:** `ft_lstnew`, `ft_lstadd_front`, `ft_lstsize`, `ft_lstlast`, `ft_lstadd_back`.
 - **Memory Management:** `ft_lstdelone`, `ft_lstclear`, `ft_lstiter`, `ft_lstmap`.
 
